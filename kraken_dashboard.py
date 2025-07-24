@@ -1,6 +1,7 @@
 
 import streamlit as st
 import krakenex
+from pykrakenapi import KrakenAPI
 import pandas as pd
 from datetime import datetime
 
