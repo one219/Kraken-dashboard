@@ -5,7 +5,10 @@ import pandas as pd
 from datetime import datetime
 
 api = krakenex.API()
-api.load_key('kraken.key')
+api_key = st.secrets["kraken"][""]
+api_secret = st.secrets["kraken"]["secret"]
+api.key = api_key
+api.secret = api_secret
 
 st.set_page_config(page_title="Kraken Dashboard", layout="centered")
 
